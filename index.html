@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Video Js (Custom)</title>
+  </head>
+  <body>
+    <div class="container">
+      <video poster="1.jpg">
+        <source src="2.mp4" type="video/mp4" />
+      </video>
+      <div class="control">
+        <div class="durConParent">
+          <input
+            type="range"
+            max="100"
+            min="0"
+            value="0"
+            class="duration-control"
+          />
+          <div class="prog"></div>
+        </div>
+        <div class="control-below">
+          <div class="vol">
+            <i id="play" class="fas fa-play"></i>
+            <div class="volCh">
+              <i class="fas fa-volume-up"></i>
+              <div class="volumeParent">
+                <input type="range" class="volume" max="10" min="0" value="0" />
+                <div class="volumeProg">
+                  <div class="volumeProgBefore"></div>
+                </div>
+                <div class="after"></div>
+              </div>
+            </div>
+          </div>
+          <span class="timeDisplay">
+            <span class="disMin">00</span>:<span class="disSc">00</span>
+          </span>
+          <span class="full">[ ]</span>
+          <div class="skip">
+            <span class="skip-left"><<</span>
+            <span class="skip-right">>></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/88e015b3d6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
